@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="item" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#loadData" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #D7C2BF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.Attemptedquizlayout">
+   <children>
+      <Label fx:id="title" text="Label">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow radius="13.51" spread="0.13" width="35.04">
+         <color>
+            <Color red="1.0" green="0.970370352268219" blue="0.970370352268219" />
+         </color>
+      </DropShadow>
+   </effect>
+</VBox>

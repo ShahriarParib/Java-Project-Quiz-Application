@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #F3CC79;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.Studentsignup">
+   <children>
+      <ToolBar prefHeight="24.0" prefWidth="1024.0" style="-fx-background-color: transparent;">
+         <items>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#backfromaddstudent" style="-fx-background-color: #2B2B52;" text="Back" textFill="#f2eded" />
+         </items>
+      </ToolBar>
+      <AnchorPane layoutY="44.0" prefHeight="724.0" prefWidth="1024.0" style="-fx-background-color: #F3CC79;">
+         <children>
+            <Label layoutX="444.0" layoutY="90.0" prefHeight="90.0" prefWidth="191.0" text="  Enter Your Details">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Separator layoutY="135.0" prefHeight="44.0" prefWidth="1024.0">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Separator>
+            <TextField fx:id="firstName" layoutX="395.0" layoutY="179.0" prefHeight="33.0" prefWidth="289.0" promptText="  First Name">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="secondName" layoutX="395.0" layoutY="247.0" prefHeight="38.0" prefWidth="288.0" promptText="  Second Name">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="email" layoutX="395.0" layoutY="314.0" prefHeight="36.0" prefWidth="286.0" promptText="Email">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="395.0" layoutY="375.0" prefHeight="34.0" prefWidth="282.0" promptText="Password" />
+            <TextField fx:id="mobileNumber" layoutX="395.0" layoutY="435.0" prefHeight="38.0" prefWidth="286.0" promptText="  Mobile Number">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="397.0" layoutY="498.0" prefHeight="22.0" prefWidth="77.0" text="Gender">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <RadioButton fx:id="male" layoutX="451.0" layoutY="520.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="74.0" text="Male">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="451.0" layoutY="550.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" text="Female">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <Separator layoutX="-24.0" layoutY="569.0" prefHeight="66.0" prefWidth="1024.0">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Separator>
+            <Button fx:id="savebutton" layoutX="834.0" layoutY="629.0" mnemonicParsing="false" onAction="#saveStudent" style="-fx-background-color: #2B2B52;" styleClass="saveButton" text="Register">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+               <stylesheets>
+                  <URL value="@styles.css" />
+               </stylesheets>
+            </Button>
+            <Label layoutX="393.0" layoutY="32.0" text="Student Registration">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
